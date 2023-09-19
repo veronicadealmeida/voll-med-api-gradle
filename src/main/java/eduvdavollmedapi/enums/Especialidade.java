@@ -1,2 +1,8 @@
-package eduvdavollmedapi.enums;public enum Especialidade {
+package eduvdavollmedapi.enums;
+
+public enum Especialidade {
+    ORTOPEDIA,
+    CARDIOLOGIA,
+    GINECOLOGIA,
+    DERMATOLOGIA
 }
