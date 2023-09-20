@@ -3,6 +3,7 @@ package eduvdavollmedapi.model;
 import eduvdavollmedapi.DTO.DadosAtualizacaoMedico;
 import eduvdavollmedapi.DTO.DadosCadastroMedico;
 import eduvdavollmedapi.enums.Especialidade;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
@@ -15,6 +16,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")
+@SecurityRequirement(name = "bearer-key")
 public class Medico {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -2,6 +2,7 @@ package eduvdavollmedapi.model;
 
 import eduvdavollmedapi.DTO.DadosAtualizacaoPaciente;
 import eduvdavollmedapi.DTO.DadosCadastroPaciente;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
@@ -15,6 +16,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Entity(name = "Paciente")
 @Table(name = "voll_paciente")
+@SecurityRequirement(name = "bearer-key")
 public class Paciente {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

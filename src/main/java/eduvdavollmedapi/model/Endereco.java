@@ -1,6 +1,7 @@
 package eduvdavollmedapi.model;
 
 import eduvdavollmedapi.DTO.DadosEndereco;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -10,6 +11,7 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
+@SecurityRequirement(name = "bearer-key")
 public class Endereco {
     private String logradouro;
     private String bairro;

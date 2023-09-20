@@ -4,7 +4,7 @@ import eduvdavollmedapi.DTO.DadosAgendamentoConsulta;
 import eduvdavollmedapi.DTO.DadosCancelamentoConsulta;
 import eduvdavollmedapi.DTO.DadosDetalhamentoConsulta;
 import eduvdavollmedapi.model.Medico;
-import eduvdavollmedapi.model.consulta.Consulta;
+import eduvdavollmedapi.model.Consulta;
 import eduvdavollmedapi.model.consulta.validacoes.agendamento.ValidacaoException;
 import eduvdavollmedapi.model.consulta.validacoes.agendamento.ValidadorAgendamentoDeConsulta;
 import eduvdavollmedapi.model.consulta.validacoes.cancelamento.ValidadorCancelamentoDeConsulta;

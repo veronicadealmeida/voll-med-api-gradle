@@ -1,6 +1,6 @@
 package eduvdavollmedapi.DTO;
 
-import eduvdavollmedapi.model.consulta.Consulta;
+import eduvdavollmedapi.model.Consulta;
 
 import java.time.LocalDateTime;
 

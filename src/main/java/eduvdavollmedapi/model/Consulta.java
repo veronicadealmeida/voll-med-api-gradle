@@ -1,8 +1,9 @@
-package eduvdavollmedapi.model.consulta;
+package eduvdavollmedapi.model;
 
 import eduvdavollmedapi.enums.MotivoCancelamento;
 import eduvdavollmedapi.model.Medico;
 import eduvdavollmedapi.model.Paciente;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
@@ -17,6 +18,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")
+@SecurityRequirement(name = "bearer-key")
 public class Consulta {
 
     @Id

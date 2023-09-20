@@ -1,6 +1,6 @@
 package eduvdavollmedapi.repository;
 
-import eduvdavollmedapi.model.consulta.Consulta;
+import eduvdavollmedapi.model.Consulta;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.time.LocalDateTime;
